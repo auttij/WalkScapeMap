@@ -15,7 +15,7 @@ export class MapLayer extends LayerGroup {
   public markerLayer: LayerGroup;
   private categories: Record<string, Layer[]> = {};
   private tileMarkerContainers: MarkerContainer[][][] = [];
-  private currentZoom = 1;
+  private currentZoom = 3;
 
   public constructor(
     private map: WSMap,
@@ -33,11 +33,11 @@ export class MapLayer extends LayerGroup {
     });
     this.markerLayer = new LayerGroup();
 
-    for (let z = 0; z <= map.getMaxZoom(); ++z) {
+    for (let z = 2; z <= map.getMaxZoom(); ++z) {
       this.tileMarkerContainers[z] = [];
-      for (let x = 0; x < Math.pow(2, z + 2); ++x) {
+      for (let x = 0; x < 19 * Math.pow(2, z - 2); ++x) {
         this.tileMarkerContainers[z][x] = [];
-        for (let y = 0; y < Math.pow(2, z + 1); ++y) {
+        for (let y = 0; y < 11 * Math.pow(2, z - 2); ++y) {
           this.tileMarkerContainers[z][x][y] = new MarkerContainer();
         }
       }

@@ -3,8 +3,8 @@
     "name": "Region",
     "layers": [
       {
-        "minZoom": 0,
-        "maxZoom": 1,
+        "minZoom": 2,
+        "maxZoom": 3,
         "markers": [
           {
             "coords": [-330, 535],
@@ -75,8 +75,8 @@
     "layers": [
       {
         "name": "Jarvonia",
-        "minZoom": 1,
-        "maxZoom": 3,
+        "minZoom": 3,
+        "maxZoom": 4,
         "markers": [
           {
             "coords": [-202, 442],
@@ -184,8 +184,8 @@
       },
       {
         "name": "Gdte",
-        "minZoom": 1,
-        "maxZoom": 3,
+        "minZoom": 3,
+        "maxZoom": 4,
         "markers": [
           {
             "coords": [-197, 913],

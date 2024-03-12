@@ -10,10 +10,10 @@ const iconUrl = (iconName: string) => {
 
 window.onload = async () => {
   const map = WSMap.create({
-    mapSizePixels: 5248,
-    tileSize: 656,
-    minZoom: 0,
-    maxZoom: 3,
+    mapSizePixels: 5632,
+    tileSize: 128,
+    minZoom: 2,
+    maxZoom: 4,
   });
   const mapLayer = map.addMapLayer();
 

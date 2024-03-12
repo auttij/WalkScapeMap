@@ -28,7 +28,7 @@ export class WSMap extends Map {
       options.maxZoom = maxZoom;
     }
     if (options.minZoom == undefined) {
-      options.minZoom = maxZoom - 3;
+      options.minZoom = maxZoom - 2;
     }
 
     const bounds = new LatLngBounds(
@@ -39,7 +39,7 @@ export class WSMap extends Map {
 
     const map = new WSMap("map", options.tileSize, bounds, options).setView(
       [(-1 / 2) * tileSize, (3 / 4) * tileSize],
-      1
+      3
     );
 
     // Enable dragging and zooming
